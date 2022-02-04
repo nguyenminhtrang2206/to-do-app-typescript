@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(10deg, #fff, #f29f1d);
+  color: #2b255a;
+  font-family: "Architects Daughter", cursive;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  font-family: "Architects Daughter", cursive;
+  color: #2b255a;
+}
+
+form button {
+  color: #2b255a;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #2b255a;
+  color: #f29f1d;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.new-div {
+  margin: o.5rem;
+  background: #2b255a;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.new-div:hover {
+  background: #f29f1d;
+  color: #2b255a;
+}
+
+.new-li {
+  flex: 1;
+}
+
+.trash-button {
+  background: #f29f1d;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.new-li {
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  background: #f29f1d;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 1rem;
+  }
+  form input,
+  form button {
+    font-size: 1.5rem;
+  }
+  .new-div {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .trash-button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+} ;
